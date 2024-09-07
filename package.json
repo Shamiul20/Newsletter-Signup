@@ -1,0 +1,17 @@
+{
+  "name": "newsletter-signup",
+  "version": "1.0.0",
+  "description": "My first Newsletter",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Shamiul",
+  "license": "ISC",
+  "dependencies": {
+    "@mailerlite/mailerlite-nodejs": "^1.3.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}

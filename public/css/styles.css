@@ -1,0 +1,115 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+h1 {
+  color: #000000;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+}
+p {
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://static-cse.canva.com/blob/1431088/Patterns303.feef6bdb.avif");
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 33px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: perspective(1000px) rotateX(5deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-signin:hover {
+  transform: perspective(1000px) rotateX(0deg) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.top {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.middle {
+  margin-bottom: -1px;
+  border-radius: 0;
+}
+
+.bottom {
+  margin-bottom: 39px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* From Uiverse.io by zjssun */
+button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+#btn:hover,
+:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
